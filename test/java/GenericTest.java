@@ -9,6 +9,7 @@ public class GenericTest
         GenericMethod max=new GenericMethod();
         Assert.assertEquals(7,max.maxInt(x,y,z));
     }
+
     @Test
     public void maxFloatTest(){
 
@@ -16,5 +17,11 @@ public class GenericTest
         Assert.assertEquals(7.1f,max1.maxFloat(6.5f,6.7f,7.1f),0.0f);
     }
 
+    @Test
+    public void maxStringTest(){
+
+        GenericMethod max2=new GenericMethod();
+        Assert.assertEquals("Cat",max2.maxString("Cat","Ball","Apple"));
+    }
 
 }
