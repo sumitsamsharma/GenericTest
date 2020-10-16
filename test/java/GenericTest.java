@@ -6,8 +6,9 @@ public class GenericTest
     @Test
     public void maxTest()
     {
-        GenericMethod max=new GenericMethod(7.5,6.5,5.5);
-        Assert.assertEquals(7.5,max.maxValue());
+        Integer[] inputArray={1,2,4,0,9};
+        GenericMethod max=new GenericMethod(inputArray);
+        Assert.assertEquals(9,max.maximum());
     }
 
 
